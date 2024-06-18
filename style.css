@@ -1,0 +1,186 @@
+body{
+    font-family: "epilogue";
+    font-weight: bold;
+    font-size: 110%;
+    position: fixed;
+    width: 100%;
+    height: auto;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color:red;
+    transition: 0.5s ease;
+}
+
+p{
+    text-align: justify;
+    padding-bottom: 30px;
+}
+
+ul li{
+    list-style-type: none;
+    padding: 0%;
+}
+
+h1{
+    text-shadow: 0px 1.5px, 1.5px 0px, 1.5px 1.5px;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+i{
+    visibility: hidden;
+    color: black;
+}
+
+.logo{
+    width: 20%;
+    margin: 1%;
+}
+
+.categories{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+}
+
+.options{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.account{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 20%;
+}
+
+.register{
+    border: solid 2px black;
+    border-radius: 10px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.register:hover{
+    background-color: black;
+    color: white;
+    transition: 0.5s ease;
+}
+
+section{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    padding: 10%;
+    align-items: flex-start;
+}
+
+.slogan{
+    font-size: 300%;
+    font-weight: 900;
+}
+
+.learn_more{
+    color: white;
+    background-color: black;
+    border-radius: 15px;
+    padding: 20px;
+    padding-left: 45px;
+    padding-right: 45px;
+}
+
+.learn_more:hover{
+    transition: 0.5s ease;
+
+    animation: learn_more 2s ease-in-out infinite;
+}
+
+@keyframes learn_more{
+    0%{
+        background-color: red;
+        color: white;
+    }
+
+    50%{
+        background-color:blueviolet;
+        color: white;
+    }
+
+    100%{
+        background-color: red;
+        color: white;
+    }
+}
+
+img{
+    width: 50%;
+    height: 500px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 415px){
+    nav{
+        visibility: hidden;
+    }
+
+    i{
+        visibility: visible;
+        width: 200%;
+        height: auto;
+    }
+
+    p{
+        text-align: center;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .slogan{
+        display: flex;
+        text-align: center;
+        flex-wrap: nowrap;
+    }
+
+    .learn_more{
+        padding: 10px;
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+
+    img{
+        border-radius: 0%;
+        width: fit-content;
+        display: block;
+        margin: 0 auto;
+    }
+}
